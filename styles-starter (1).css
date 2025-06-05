@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background: url('background (1).jpg') no-repeat center center fixed; 
+  background-size: cover;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(41, 40, 40, 0.527); 
+  padding: 15px;
+  border-radius: 75px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #00b3ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #060606;
+  text-decoration: underline;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    flex: 1 1 45%;
+    max-width: 500px;
+  }
+}
+
+h1, h2, h3 {
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+h2, h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #1f1f1f;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+li {
+  flex: 1 1 200px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(41, 40, 40, 0.8); 
+  color: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+footer a {
+  color: #00b3ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff6600;
+}
+
+/* NEW: Project section styles */
+#projects {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 a {
+  color: #00b3ff;
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  color: #060606;
+  text-decoration: underline;
+}
