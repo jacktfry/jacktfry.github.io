@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 5 - Turtle Graphics Refactoring</title>
+  <link rel="stylesheet" href="styles-starter (1).css" />
+  <style>
+    pre {
+      background-color: #f3f3f3;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+    code {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Project 5: Turtle Graphics Refactoring</h1>
+    <p><a href="index (4).html">← Back to About Me</a></p>
+  </header>
+
+  <main class="main-content">
+    <section>
+      <h2>Overview</h2>
+      <p>This project refactors my earlier Turtle Graphics scene to improve organization and readability. I added reusable shape functions, modular scene components, and visual details like flags, clouds, and hills.</p>
+    </section>
+
+    <section>
+      <h2>Code Sample</h2>
+      <pre><code>
+def draw_flag(t, x, y):
+    """Draw a flag on top of a tower"""
+    jump_to(t, x, y)
+    t.setheading(90)
+    t.pendown()
+    t.forward(25)
+    t.right(90)
+    t.fillcolor("red")
+    t.begin_fill()
+    for _ in range(3):
+        t.forward(12)
+        t.right(120)
+    t.end_fill()
+    t.penup()
+    t.setheading(0)
+      </code></pre>
+      <p>This function adds reusable flag drawing on top of each tower using Turtle commands.</p>
+    </section>
+
+    <section>
+      <h2>Features Included</h2>
+      <ul>
+        <li>Modular shape functions: rectangle, square, triangle, circle, star</li>
+        <li>Scene elements: moon, stars, castle, flags, clouds, hills</li>
+        <li>Reusable helper functions for drawing and positioning</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jack Fry. All rights reserved.</p>
+  </footer>
+</body>
+</html>
